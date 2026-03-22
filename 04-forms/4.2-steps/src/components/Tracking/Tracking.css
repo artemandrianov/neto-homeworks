@@ -1,0 +1,35 @@
+table {
+  inline-size: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+td button {
+  background-color: inherit;
+  color: black;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+td button:hover {
+  transform: scale(1.5);
+  transition: transform 0.3s;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 650px;
+  background-color: ghostwhite;
+  padding: 20px;
+  text-align: center;
+}
