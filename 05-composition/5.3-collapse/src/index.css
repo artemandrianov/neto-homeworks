@@ -1,0 +1,26 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  background: #C5DDEB;
+  font: 14px/20px "Lato", Arial, sans-serif;
+  padding: 40px 0;
+  color: white;
+}
+
+
+.container {
+  margin: 0 auto;
+  inline-size: 750px;
+  background: #444753;
+  border-radius: 5px;
+}
+
+.photo-manager {
+  border-radius: 5px;
+  padding: 20px;
+  width: 500px;
+}
