@@ -1,0 +1,143 @@
+:root {
+  --clock-size: 120px;
+  --clock-border: #333;
+  --clock-bg: #fff;
+  --hand-hour: #000;
+  --hand-minute: #333;
+  --hand-second: #e74c3c;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --radius-sm: 4px;
+  --radius-round: 50%;
+}
+
+.clock-form {
+  display: flex;
+  align-items: flex-end;
+  gap: var(--spacing-lg);
+  margin-bottom: 40px;
+  font-family: system-ui, sans-serif;
+}
+
+.clock-form__field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.clock-form__field input {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: var(--radius-sm);
+  font-size: 16px;
+  width: 200px;
+}
+
+.clock-form__submit {
+  padding: 8px 24px;
+  height: 100%;
+  border: 1px solid #333;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.2s ease;
+}
+
+.clock-form__submit:hover {
+  color: black;
+  background: #f0f0f0;
+}
+
+.clock-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  font-family: system-ui, sans-serif;
+}
+
+.clock-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.clock-item__header {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.clock-item__title {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.clock-item__remove {
+  width: 24px;
+  height: 24px;
+  border-radius: var(--radius-round);
+  border: 1px solid #ccc;
+  background: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  color: #666;
+}
+
+.clock-item__remove:hover {
+  background: #eee;
+  color: #000;
+}
+
+.clock-face {
+  width: var(--clock-size);
+  height: var(--clock-size);
+  border: 2px solid var(--clock-border);
+  border-radius: var(--radius-round);
+  position: relative;
+  background: var(--clock-bg);
+}
+
+.clock-hand {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform-origin: bottom center;
+  border-radius: 4px;
+}
+
+.clock-hand--hour {
+  width: 4px;
+  height: 30%;
+  background: var(--hand-hour);
+  margin-left: -2px;
+}
+
+.clock-hand--minute {
+  width: 3px;
+  height: 40%;
+  background: var(--hand-minute);
+  margin-left: -1.5px;
+}
+
+.clock-hand--second {
+  width: 2px;
+  height: 45%;
+  background: var(--hand-second);
+  margin-left: -1px;
+}
+
+.clock-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  background: var(--clock-border);
+  border-radius: var(--radius-round);
+  transform: translate(-50%, -50%);
+}
