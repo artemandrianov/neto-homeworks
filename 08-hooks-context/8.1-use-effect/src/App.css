@@ -1,0 +1,55 @@
+.app-container {
+  display: flex;
+  gap: 30px;
+  padding: 20px;
+  font-family: sans-serif;
+  max-width: 800px;
+}
+
+.user-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.user-list-item {
+  padding: 15px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.2s;
+}
+
+.user-list-item:last-child {
+  border-bottom: none;
+}
+
+.user-list-item:hover {
+  background-color: #f9f9f9;
+}
+
+.user-list-item.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.user-details-card {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.user-avatar {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.user-info {
+  padding: 20px;
+}
+
+.user-info h2 {
+  margin-top: 0;
+}
