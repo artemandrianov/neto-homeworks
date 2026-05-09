@@ -1,0 +1,15 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #ededed;
+  color: #000000;
+}
+
+.header__user {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  align-items: center;
+}

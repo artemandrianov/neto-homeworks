@@ -1,0 +1,14 @@
+main {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  margin: 36px;
+  padding: 0 26px 0 26px;
+  background: #eeee;
+}
+
+.landing {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

@@ -1,0 +1,10 @@
+.root-layout {
+  min-height: 100vh;
+  background: var(--color-bg);
+}
+
+.root-layout__content {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
